@@ -18,8 +18,6 @@ Then you use the in-game feature to take control of your character (this is boun
 
 And that’s the recording process. Ideally this is something you’d repeat multiple times throughout a single replay, and then go on to do this for other replays as well.
 
-Gif of trimming the video
-
 Next what you do is take each clip and trim it down so that it only contains the necessary footage. I just use the default Windows 10 photos program since they’re pretty small clips. After that you make the gifs.
 
 I personally use the software Shutter Encoder since it lets me convert gifs on my desktop. I’ve created a preset that converts each clip into a 320x180 20fps gif (just look up how to do this), and I’ve edited the preferences to automatically go to that preset on startup. 
