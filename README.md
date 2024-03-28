@@ -1,58 +1,38 @@
-# Tekken-Lab-Assistant
+# Tekken Lab Assistant
 
-Gif Gathering
+## Gif Gathering
 
-So we’ll get to the html aspect in a bit, but first I’m going to show how I go about collecting the gifs in the first place.
+This guide will walk you through the process of collecting gifs for your Tekken lab assistant. Before diving into the HTML aspect, let's start by understanding how to gather the gifs.
 
-The one thing you’ll need in order to customize the file for your own needs is a means of recording your screen. I personally use the software that came with my graphics card, but of course there are plenty of other options. Unfortunately the process is going to be a bit more tedious if you’re not on PC, but if you’re smart about how you streamline the process you can make it a lot easier.
+### Prerequisites
+You'll need a means of recording your screen. This could be software that came with your graphics card or any other screen recording tool.
 
-Images of my replays
+### Recording Process
+1. **Capture Replays**: Start by selecting a match to analyze from your replays. Choose matches where you faced tough opponents or encountered challenging situations.
+   
+2. **Identify Learning Moments**: Find moments in the match where you could have responded better or need to learn how to counter specific moves.
 
-I start by going into my replays and selecting a match to analyze. Obviously the best choice is going to be a match against an opponent you had a particularly tough time against, but really every match you play is going to be a learning experience so I personally believe it’s best to do this with as many matches as you can.
+3. **Take Control and Record**: During replay, use the in-game feature to take control of your character. Try out different options to deal with the situations you've identified. Record your screen while responding to moves.
 
-Gif of me getting stomped
+4. **Trim the Video**: After recording, trim each clip to contain only the necessary footage.
 
-Next, simply find a spot in the match that makes you think to yourself “I could’ve responded to that better” or “I don’t know how to counter that”. 
+5. **Convert to Gifs**: Use a tool like Shutter Encoder to convert each clip into a gif. Set preferences for size and frame rate to create optimized gifs.
 
-Gif of me using the take control feature (also include what button to push)
+6. **Organize Gifs**: Place each gif into its corresponding character folder.
 
-Then you use the in-game feature to take control of your character (this is bound to the left and right thumbsticks) during the replay and essentially just try out different options until you figure out how to deal with whatever you’ve selected. Once you’ve figured it out, you start recording your screen and capture a short clip of the opponent throwing out the move and you responding to it accordingly. I personally have the start/stop recording button bound to a key combination just to make the process faster.
+### Customizing HTML
+Now, let's customize the HTML file to integrate these gifs into your lab assistant.
 
-And that’s the recording process. Ideally this is something you’d repeat multiple times throughout a single replay, and then go on to do this for other replays as well.
+1. **Open the Index.html File**: Open the index.html file in a text editor like Notepad++ or VS Code.
 
-Gif of trimming the video
+2. **Navigate to Character Section**: Each section in the code corresponds to a character. Use Ctrl+F to search for your desired character section, e.g., "Lee."
 
-Next what you do is take each clip and trim it down so that it only contains the necessary footage. I just use the default Windows 10 photos program since they’re pretty small clips. After that you make the gifs.
+3. **Copy and Paste Code Chunk**: Copy the code chunk for the character section and paste it above the line containing the word 'clear'. This creates a new spot to log a move.
 
-I personally use the software Shutter Encoder since it lets me convert gifs on my desktop. I’ve created a preset that converts each clip into a 320x180 20fps gif (just look up how to do this), and I’ve edited the preferences to automatically go to that preset on startup. 
+4. **Update Gif and Notes**: In the folder for the chosen character, copy the name of the desired move. In the code, paste the name and file type of the new gif. Add notes below the gif if needed.
 
-Gif of me doing the following
+5. **Save and Test**: Save the HTML file. Open it in your web browser to see the move you've labbed now logged.
 
-Then I just ctrl select every clip I want to convert, right-click, select “send to”, and choose Shutter Encoder. With all the stuff I’ve set up beforehand all I have to do now is press start function, and within like 30 seconds all of the gifs are done. At this point you can just delete the old videos.
+## Conclusion
 
-Gif of me doing the following
-
-The final step of the gif gathering process is to go into the **** folder and place each gif into it’s corresponding character folder.
-
-Now for the easy part. The first step is to open the index.html file in a text editor of your choice. I’d recommend something like notepad++ or VS Code. 
-
-Gif of me opening index.html and scrolling down to Dragunov. I then highlight the chunk of code
-
-Each section is going to be labeled in the code, so all you have to do is navigate to the character you’re labbing and follow these steps (it might be easier if you use ctrl+f to search for your desired section). Let’s go to Lee for this example.
-
-Gif of me copying and pasting the code chunk
-
-The current download is going to be filled with my personal notes. If you want to add to these you’ll have to copy this chunk of code and paste it right above this line that contains the word ‘clear’, and now you get a new spot to log a move. 
-
-Navigating the folder 
-
-Next you go into the folder for the character you choose and copy the name of the desired move. Back in the code navigate to where the old gif is located (it will follow the character’s name and a backslash) and paste in the name and file type of your new gif. Directly underneath this line there will be a space for you to write your notes.
-
-And with that it’s done! Simply save the file, open it up in your web browser, and the move you’ve labbed will now be logged.
-
-Conclusion
-
-I had considered (Especially since it wouldn’t be guaranteed it would get enough support to warrant putting that much work into it)
-So I decided the next best thing to do would be to just give everyone the resources to do whatever they want with it.
-
-I highly encourage you to play around with this and customize it to your liking. Cater it to your main, adapt it to a different fighting game, rewrite the format, or even put it online if you want! My only ask is that whatever you do you share it with the community.
+Customize and adapt this Tekken lab assistant to your liking. Whether it's for your main character, another fighting game, or a different format, feel free to modify it. Share your customized versions with the community and contribute to improving the Tekken learning experience for everyone!
